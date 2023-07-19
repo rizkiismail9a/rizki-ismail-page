@@ -1,0 +1,37 @@
+<template>
+  <div class="container max-width">
+    <nav class="navbar navbar-expand-lg m-3 rounded bg-white position-sticky" style="top: 0px">
+      <div class="container d-flex flex-md-row flex-column m-auto">
+        <a class="navbar-brand" href="#"><img src="../assets/images/logo.webp" alt="" width="80" /></a>
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <div class="navbar-nav navbar__button">
+          <a to="#" class="btn btn-primary contact__link">Contact Me</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "nav-bar",
+};
+</script>
+
+<style scoped>
+.navbar {
+  box-shadow: var(--shadow-main);
+}
+.btn-primary {
+  --bs-btn-color: #0d6efd;
+  --bs-btn-bg: #fff;
+}
+@media screen and (max-width: 1000px) {
+  .navbar__button {
+    width: 40%;
+    text-align: center;
+  }
+}
+</style>

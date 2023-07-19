@@ -13,6 +13,11 @@ const router = createRouter({
       name: "Muhamad Rizki Ismail || Tentang Saya",
       component: () => import("../views/aboutMePage"),
     },
+    {
+      path: "/contact-me",
+      name: "Muhamad Rizki Ismail || Hubungi Saya",
+      component: () => import("../views/contactMePage"),
+    },
   ],
 });
 router.beforeEach((to) => {

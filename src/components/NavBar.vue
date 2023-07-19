@@ -1,6 +1,6 @@
 <template>
-  <div class="container max-width">
-    <nav class="navbar navbar-expand-lg m-3 rounded bg-white position-sticky" style="top: 0px">
+  <div class="container max-width position-sticky top-0">
+    <nav class="navbar navbar-expand-lg m-3 rounded bg-white">
       <div class="container d-flex flex-md-row flex-column m-auto">
         <a class="navbar-brand" href="/"><img src="../assets/images/logo.webp" alt="" width="80" /></a>
         <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">

@@ -18,7 +18,7 @@
           <a class="home__button rounded-pill p-2 d-inline-block font-red btn btn-primary" ref="homeButtonRefs" href=""><i class="fa-solid fa-bell-concierge"></i> Layanan</a>
         </div>
         <div>
-          <a class="home__button rounded-pill p-2 d-inline-block font-red btn btn-primary" ref="homeButtonRefs" href=""><i class="fa-regular fa-envelope"></i> Hubungi Saya</a>
+          <a class="home__button rounded-pill p-2 d-inline-block font-red btn btn-primary" ref="homeButtonRefs" href="/contact-me"><i class="fa-regular fa-envelope"></i> Hubungi Saya</a>
         </div>
       </div>
     </div>

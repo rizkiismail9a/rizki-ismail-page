@@ -5,8 +5,13 @@ const router = createRouter({
   routes: [
     {
       path: "/",
-      name: "Yuri's Page || Home",
+      name: "Muhamad Rizki Ismail || Beranda",
       component: () => import("../views/homePage"),
+    },
+    {
+      path: "/about-me",
+      name: "Muhamad Rizki Ismail || Tentang Saya",
+      component: () => import("../views/aboutMePage"),
     },
   ],
 });

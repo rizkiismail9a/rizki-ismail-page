@@ -12,7 +12,7 @@
   max-width: 976px;
 }
 body {
-  background: linear-gradient(white, rgb(72, 202, 241)) no-repeat;
+  background: linear-gradient(white, rgb(175, 233, 251), rgb(72, 202, 241)) no-repeat;
   background-size: 100%;
   height: 100vh;
 }
@@ -21,4 +21,17 @@ body {
 }
 a {
   text-decoration: none;
+}
+.btn-primary {
+  --bs-btn-color: #cd2c08;
+  --bs-btn-bg: white;
+  --bs-btn-border-color: #cd2c08;
+  --bs-btn-hover-color: white;
+  --bs-btn-hover-bg: #cd2c08;
+  --bs-btn-hover-border-color: unset;
+}
+@media screen and (max-width: 480px) {
+  body {
+    height: fit-content;
+  }
 }

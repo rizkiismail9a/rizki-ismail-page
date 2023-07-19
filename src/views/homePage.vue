@@ -4,21 +4,21 @@
     <div class="row">
       <div class="col-md-4 text-center d-flex align-items-center flex-column justify-content-between p-0">
         <div>
-          <a class="home__button rounded-pill p-2 d-inline-block font-red" ref="homeButtonRefs" href=""><i class="fa-solid fa-user"></i> Tentang Saya</a>
+          <a class="home__button rounded-pill p-2 d-inline-block font-red btn btn-primary" ref="homeButtonRefs" href="/about-me"><i class="fa-solid fa-user"></i> Tentang Saya</a>
         </div>
         <div>
-          <a class="home__button rounded-pill p-2 d-inline-block font-red" ref="homeButtonRefs" href=""><i class="fa-regular fa-image"></i> Portoflio</a>
+          <a class="home__button rounded-pill p-2 d-inline-block font-red btn btn-primary" ref="homeButtonRefs" href=""><i class="fa-regular fa-image"></i> Portoflio</a>
         </div>
       </div>
       <div class="col-md-4 text-center">
-        <img class="home__img rounded-circle" src="../assets/images/me.png" alt="" width="200" />
+        <img class="home__img rounded-circle" src="../assets/images/me.png" alt="Muhamad Rizki Ismail" width="200" />
       </div>
       <div class="col-md-4 text-center d-flex align-items-center flex-column justify-content-between p-0">
         <div>
-          <a class="home__button rounded-pill p-2 d-inline-block font-red" ref="homeButtonRefs" href=""><i class="fa-solid fa-user"></i> Layanan</a>
+          <a class="home__button rounded-pill p-2 d-inline-block font-red btn btn-primary" ref="homeButtonRefs" href=""><i class="fa-solid fa-bell-concierge"></i> Layanan</a>
         </div>
         <div>
-          <a class="home__button rounded-pill p-2 d-inline-block font-red" ref="homeButtonRefs" href=""><i class="fa-regular fa-image"></i> Hubungi Saya</a>
+          <a class="home__button rounded-pill p-2 d-inline-block font-red btn btn-primary" ref="homeButtonRefs" href=""><i class="fa-regular fa-envelope"></i> Hubungi Saya</a>
         </div>
       </div>
     </div>
@@ -37,21 +37,13 @@ export default {
     NavBar,
   },
   name: "home-page",
-  mounted() {
-    this.$refs.homeButtonRefs.hover;
-  },
 };
 </script>
 <style scoped>
 .home__button {
-  background-color: white;
   width: 200px;
 }
-.home__button:hover {
-  background-color: rgb(41, 194, 240);
-  color: aliceblue;
-  box-shadow: var(--shadow-hover-white);
-}
+
 @media screen and (max-width: 480px) {
   .home__button {
     margin: 12px;

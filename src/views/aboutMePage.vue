@@ -9,14 +9,14 @@
         <div class="col-md-8">
           <h1 class="fs-3">Muhamad Rizki Ismail</h1>
           <p class="card__text my-1">
-            Muhamad Rizki Ismail atau dikenal dengan nama pena Yuri S. Ostrovsky adalah seorang <i>self-taught web developer,</i> seniman visual, dan penulis cerpen. Ia lulus dari SMA Negeri 1 Pacet Cianjur jurusan MIPA dan kini berprofesi
-            sebagai seorang <i>content-creator, visual artist freelance,</i> dan agen narahubung di sebuah oraganisasi swasta. Ia juga tengah mengenyam pelatihan di Timedoor Academy sebagai <i>FrontEnd Developer</i>.<br /><br />
-            Meskipun ia tidak memiliki gelar sarjana, tetapi ia sangat berkompeten dengan <i>soft-skill</i> SDM unggul seperti <i>critical-thinking, fast-learning,</i> kemampuan <i>public-speaking,</i> dan <i>problem-solving.</i> Ini semua
-            dibuktikan dengan dapat mempelajari dasar-dasar Vue Js kurang dari dua minggu dan strategi pasarnya telah membuat ia mendapatkan banyak klien dari berbagai penjuru dunia, seperti Inggris, Amerika Serikat, hingga Belgia.
+            Muhamad Rizki Ismail or known as Yuri S. Ostrovsky (pen name) is a self-taught web developer, visual artist, and <i>cerpen</i> writer. He has graduated from SMA Negeri 1 Pacet Cianjur in MIPA major as his educational background.
+            He is now a content-creator, freelance visual artist, and call center agent at Kamar Sastra by profession. He is also now a trainee as frontend developer at Timedoor Academy. <br />
+            Although he has no any bachelor degree, yet, but he is highfully competent person with superior human resource abilities such as critical thinking, fast learning, good at public speaking, and good problem solving. Those are
+            proven by his ability to learn basic Vue Js within less than two weeks, and his self-marketing strategies has brought clients from around the world, such as UK, USA, Australia, and Beligium.
           </p>
           <p class="mt-5">
             <a class="font-red download-cv d-inline-block" ref="downloadCv" href="https://docs.google.com/document/d/1g58eWM0jJ0Z5M18E1KJG8zIPgA8n0FRZKcMR7aA9W8M/edit">
-              Unduh Resume <i class="fa-solid fa-download"></i>
+              Download CV <i class="fa-solid fa-download"></i>
               <span class="slide-hover"></span>
             </a>
           </p>

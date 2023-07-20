@@ -5,18 +5,30 @@ const router = createRouter({
   routes: [
     {
       path: "/",
-      name: "Muhamad Rizki Ismail || Beranda",
+      name: "Home | Muhamad Rizki Ismail",
       component: () => import("../views/homePage"),
     },
     {
       path: "/about-me",
-      name: "Muhamad Rizki Ismail || Tentang Saya",
+      name: "About Me | Muhamad Rizki Ismail",
       component: () => import("../views/aboutMePage"),
     },
     {
       path: "/contact-me",
-      name: "Muhamad Rizki Ismail || Hubungi Saya",
+      name: "Contact Me | Muhamad Rizki Ismail",
       component: () => import("../views/contactMePage"),
+    },
+    {
+      path: "/portfolio",
+      name: "Portfolio | Muhamad Rizki Ismail",
+      component: () => import("../views/portfolioPage"),
+      children: [
+        {
+          path: "/portfolio/:id",
+          name: "art-preview",
+          component: () => import("../views/artPreview"),
+        },
+      ],
     },
   ],
 });

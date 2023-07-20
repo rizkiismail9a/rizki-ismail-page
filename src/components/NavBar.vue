@@ -7,7 +7,7 @@
           <span class="navbar-toggler-icon"></span>
         </button> -->
         <div class="navbar-nav navbar__button">
-          <a to="#" class="btn btn-primary contact__link">Contact Me</a>
+          <router-link to="/contact-me" class="btn btn-primary contact__link">Contact Me</router-link>
         </div>
       </div>
     </nav>

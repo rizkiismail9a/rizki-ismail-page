@@ -30,6 +30,11 @@ const router = createRouter({
         },
       ],
     },
+    {
+      path: "/my-services",
+      name: "Services | Muhamad Rizki Ismail",
+      component: () => import("../views/servicesPage"),
+    },
     { path: "/:pathMatch(.*)*", name: "not-found", component: () => import("../views/NotFound") },
   ],
 });

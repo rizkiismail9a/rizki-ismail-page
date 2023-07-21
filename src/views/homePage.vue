@@ -15,7 +15,7 @@
       </div>
       <div class="col-md-4 text-center d-flex align-items-center flex-column justify-content-between p-0">
         <div>
-          <a class="home__button rounded-pill p-2 d-inline-block font-red btn btn-primary" ref="homeButtonRefs" href=""><i class="fa-solid fa-bell-concierge"></i> Services </a>
+          <a class="home__button rounded-pill p-2 d-inline-block font-red btn btn-primary" ref="homeButtonRefs" href="/my-services"><i class="fa-solid fa-bell-concierge"></i> Services </a>
         </div>
         <div>
           <a class="home__button rounded-pill p-2 d-inline-block font-red btn btn-primary" ref="homeButtonRefs" href="/contact-me"><i class="fa-regular fa-envelope"></i> Contact Me </a>

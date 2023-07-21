@@ -6,7 +6,7 @@
         <div class="card border-0 text-center sidebar position-sticky d-none d-md-block" style="top: 120px">
           <div class="d-flex flex-column">
             <a href="/">
-              <img src="../assets/images/logo.webp" class="sidebar__logo d-none d-md-block" alt="logo senimentari" width="110" />
+              <img src="../assets/images/logo.webp" class="sidebar__logo m-auto" alt="logo senimentari" width="110" />
             </a>
             <div class="sidebar__menu d-flex flex-column my-5">
               <a href="#illustration" class="font-red my-3"><i class="fa-solid fa-brush"></i> Illustration </a>
@@ -51,7 +51,10 @@
         <div class="container mb-3" id="website">
           <div class="web__desc">
             <h1 class="fs-4">Website</h1>
-            <p>Since visual artist is Rizki's background, he is highfully passioned with frontend developing. He curently uses Vue Js as his main framework.</p>
+            <p>
+              Since visual artist is Rizki's background, he is highfully passioned with frontend developing. He is able to use Bootstrap as CSS framework, Vue3 as JavaScript framework. He is also able to use git as VCS, like pull, fetch,
+              merge, and so on. He is also now on the way in learning React Js and backend.
+            </p>
           </div>
           <div class="d-flex web__img">
             <a v-for="web in webs" :key="web.id" :href="web.domain" class="font-red d-block w-50 p-2 card border-0 me-1">

@@ -65,7 +65,8 @@ export default {
 <style scoped>
 @media screen and (max-width: 480px) {
   .contact__title,
-  form {
+  form,
+  .alert {
     width: 100% !important;
   }
 }

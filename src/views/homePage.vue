@@ -11,7 +11,7 @@
         </div>
       </div>
       <div class="col-md-4 text-center">
-        <img class="home__img rounded-circle" src="../assets/images/me.png" alt="Muhamad Rizki Ismail" width="200" />
+        <img class="home__img rounded-circle" src="../assets/images/me.webp" alt="Muhamad Rizki Ismail" style="width: 200px" />
       </div>
       <div class="col-md-4 text-center d-flex align-items-center flex-column justify-content-between p-0">
         <div>

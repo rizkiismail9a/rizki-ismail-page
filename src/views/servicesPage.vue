@@ -20,7 +20,7 @@
           <h1 class="fs-3 fw-bold">Welcome to my services page information!</h1>
           <hr />
           <div id="illustration" class="my-5">
-            <img class="illustration__services-banner w-100 object-fit-contain mb-4" src="/images/Ryan.webp" alt="" />
+            <img class="illustration__services-banner w-100 object-fit-contain mb-4" src="../assets/images/full-color.webp" alt="illustration-banner" />
             <h3><i class="fa-solid fa-brush"></i> Illustration Services</h3>
             <div class="illustration__service-desc my-5">
               <h4 class="mt-2">🐾 What do I do?</h4>
@@ -45,7 +45,7 @@
               <div class="illustration__services-menu">
                 <h4 class="mt-3">🐾 Any specific kind of art do I offer?</h4>
                 <h5>Line Art</h5>
-                <img class="illustration__services-banner w-100 object-fit-contain mb-4" src="/images/Ryan.webp" alt="" />
+                <img class="illustration__services-menu-lineart-banner w-100 object-fit-contain mb-4" src="../assets/images/line-art.webp" alt="" />
                 <p>In this menu, I will draw your request in pencil-like sketch like the examples above. In this services, you will get a <b>high reolution png digital art, file source, and PSD file.</b></p>
                 <h6>How much to get this service?</h6>
                 <ul>
@@ -72,7 +72,7 @@
                   </li>
                 </ul>
                 <h5>Colored Sketch</h5>
-                <img class="illustration__services-banner w-100 object-fit-contain mb-4" src="/images/Ryan.webp" alt="" />
+                <img class="illustration__services-banner w-100 object-fit-contain mb-4" src="../assets/images/full-color.webp" alt="colored banner" />
                 <p>In this menu, I will draw your request in full-color, but simple shade like the examples above. In this services, you will get a <b>high reolution png digital art, file source, and PSD file.</b></p>
                 <h5>How much to get this service?</h5>
                 <ul>
@@ -102,7 +102,7 @@
                   </li>
                 </ul>
                 <h5>Full Painting</h5>
-                <img class="illustration__services-banner w-100 object-fit-contain mb-4" src="/images/Ryan.webp" alt="" />
+                <img class="illustration__services-banner w-100 object-fit-contain mb-4" src="../assets/images/fullpaint.webp" alt="full paint banner" />
                 <p>In this menu, I will draw your request in full-color, full-shading, and full rendering like the example above. In this services, you will get a <b>high reolution png digital art, file source, and PSD file.</b></p>
                 <h5>How much to get this service?</h5>
                 <ul>

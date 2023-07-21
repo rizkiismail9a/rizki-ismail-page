@@ -29,11 +29,15 @@ export default {
 .popUp {
   top: 150px;
   opacity: 1;
-  transition: all 0.3s;
 }
 .close-mark {
   display: block;
   width: 100%;
   cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+  .popUp {
+    width: 100% !important;
+  }
 }
 </style>

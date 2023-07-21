@@ -22,9 +22,9 @@
             <h1 class="fs-4">Visual Art</h1>
             <p>Rizki is a visual artist who actively makes content on his page in semireaslism style. Those arts below are his best those he worked either personaly or commission project, from personal use until book illustration.</p>
           </div>
-          <div class="row flex-wrap illustration__img gx-2">
+          <div class="row illustration__img gx-2">
             <router-link
-              class="w-50 font-red"
+              class="font-red col-md-6"
               @click="isOpen = true"
               v-for="art in arts"
               :key="art.id"
@@ -56,8 +56,8 @@
               merge, and so on. He is also now on the way in learning React Js and backend.
             </p>
           </div>
-          <div class="d-flex web__img">
-            <a v-for="web in webs" :key="web.id" :href="web.domain" class="font-red d-block w-50 p-2 card border-0 me-1">
+          <div class="row web__img">
+            <a v-for="web in webs" :key="web.id" :href="web.domain" class="font-red col-md-6 p-2 border-0 mx-auto">
               <div class="img__wrapper" style="width: 100%">
                 <img :src="path + web.fileName" alt="tokobukumentari landing page" class="w-100 object-fit-contain mb-3 rounded" />
                 <h2>{{ web.title }}</h2>
@@ -77,8 +77,8 @@
             <h1 class="fs-4">Cerpen</h1>
             <p>Rizki is a writer who loves to write short story (cerpen) in surealism style, cultural, and/or historical genre</p>
           </div>
-          <div class="container d-flex">
-            <a v-for="cerpen in cerpenCerpen" :key="cerpen.id" :href="cerpen.link" class="font-red d-block w-50 p-2 card border-0 me-1">
+          <div class="container row justify-content-between">
+            <a v-for="cerpen in cerpenCerpen" :key="cerpen.id" :href="cerpen.link" class="font-red col-md-6 p-2 border-0">
               <div class="img__wrapper w-100">
                 <img :src="cerpen.fileName" alt="tokobukumentari landing page" class="w-100 object-fit-contain mb-3 rounded" />
                 <p>{{ cerpen.title }}</p>
@@ -124,7 +124,8 @@ export default {
 </script>
 
 <style scoped>
-.sidebar {
+.sidebar,
+.card {
   box-shadow: var(--shadow-main);
 }
 </style>

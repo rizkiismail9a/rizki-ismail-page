@@ -2,7 +2,7 @@
   <nav-bar class="z-1" />
   <div class="container max-width m-auto my-5">
     <div class="row mx-2">
-      <div class="col-sm-2">
+      <div class="col-md-2">
         <div class="card border-0 text-center sidebar position-sticky d-none d-md-block" style="top: 120px">
           <div class="d-flex flex-column">
             <a href="/">
@@ -16,7 +16,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-10">
+      <div class="col-md-10">
         <div class="container position-relative" id="illustration">
           <div class="illustration__desc">
             <h1 class="fs-4">Visual Art</h1>

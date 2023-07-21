@@ -48,16 +48,23 @@
           </div>
           <router-view v-show="isOpen" @close="isOpen = false" class="position-absolute" />
         </div>
-        <div class="container" id="website">
+        <div class="container mb-3" id="website">
           <div class="web__desc">
             <h1 class="fs-4">Website</h1>
-            <p>As an illustrator, frontend developing is just like a heaven for Rizki. He curently uses Vue Js as his main framework</p>
+            <p>Since visual artist is Rizki's background, he is highfully passioned with frontend developing. He curently uses Vue Js as his main framework.</p>
           </div>
-          <div class="row flex-wrap web__img gx-2">
-            <a v-for="web in webs" :key="web.id" :href="web.domain" class="font-red">
-              <div class="img__wrapper w-50">
-                <img :src="path + web.fileName" alt="tokobukumentari landing page" class="w-100 object-fit-contain mb-3" />
-                <p>{{ web.title }}</p>
+          <div class="d-flex web__img">
+            <a v-for="web in webs" :key="web.id" :href="web.domain" class="font-red d-block w-50 p-2 card border-0 me-1">
+              <div class="img__wrapper" style="width: 100%">
+                <img :src="path + web.fileName" alt="tokobukumentari landing page" class="w-100 object-fit-contain mb-3 rounded" />
+                <h2>{{ web.title }}</h2>
+                <div class="tech-and-date d-flex justify-content-between mb-3">
+                  <div class="tech__img">
+                    <img :src="tech.url" alt="tech" class="me-1" v-for="tech in web.technologies" :key="tech.url" style="width: 30px" />
+                  </div>
+                  <small>{{ web.dateMade }}</small>
+                </div>
+                <p style="color: black">{{ web.description }}</p>
               </div>
             </a>
           </div>
@@ -65,18 +72,16 @@
         <div class="container" id="cerpen">
           <div class="illustration__desc">
             <h1 class="fs-4">Cerpen</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, a reiciendis commodi earum quia inventore totam fugit velit doloremque necessitatibus.</p>
+            <p>Rizki is a writer who loves to write short story (cerpen) in surealism style, cultural, and/or historical genre</p>
           </div>
-          <div class="row flex-wrap illustration__img gx-2">
-            <div class="img__wrapper w-50">
-              <img src="../assets/images/singalong.webp" alt="" class="w-100 object-fit-contain mb-3" />
-            </div>
-            <div class="img__wrapper w-50">
-              <img src="../assets/images/singalong.webp" alt="" class="w-100 object-fit-contain mb-3" />
-            </div>
-            <div class="img__wrapper w-50">
-              <img src="../assets/images/singalong.webp" alt="" class="w-100 object-fit-contain mb-3" />
-            </div>
+          <div class="container d-flex">
+            <a v-for="cerpen in cerpenCerpen" :key="cerpen.id" :href="cerpen.link" class="font-red d-block w-50 p-2 card border-0 me-1">
+              <div class="img__wrapper w-100">
+                <img :src="cerpen.fileName" alt="tokobukumentari landing page" class="w-100 object-fit-contain mb-3 rounded" />
+                <p>{{ cerpen.title }}</p>
+                <p style="color: black; text-align: justify">{{ cerpen.description }}</p>
+              </div>
+            </a>
           </div>
         </div>
       </div>

@@ -14,7 +14,9 @@
 }
 body {
   background: linear-gradient(white, rgb(175, 233, 251), rgb(72, 202, 241)) no-repeat;
-  background-size: 100%;
+  min-height: 100vh;
+  /* background-size: 100%; */
+  /* background-color: greenyellow; */
   height: 100%;
 }
 .font-red {
@@ -30,9 +32,9 @@ a {
   --bs-btn-hover-color: white;
   --bs-btn-hover-bg: #cd2c08;
   --bs-btn-hover-border-color: unset;
-}
-@media screen and (max-width: 480px) {
-  body {
-    height: fit-content;
-  }
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: rgb(72, 202, 241);
+  --bs-btn-active-border-color: rgb(72, 202, 241);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }

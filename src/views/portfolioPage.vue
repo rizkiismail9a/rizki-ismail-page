@@ -79,7 +79,7 @@
           </div>
           <div class="container row justify-content-between">
             <a v-for="cerpen in cerpenCerpen" :key="cerpen.id" :href="cerpen.link" class="font-red col-md-6 p-2 border-0">
-              <div class="img__wrapper w-100">
+              <div class="img__wrapper">
                 <img :src="cerpen.fileName" alt="tokobukumentari landing page" class="w-100 object-fit-contain mb-3 rounded" />
                 <p>{{ cerpen.title }}</p>
                 <p style="color: black; text-align: justify">{{ cerpen.description }}</p>
@@ -124,8 +124,10 @@ export default {
 </script>
 
 <style scoped>
-.sidebar,
-.card {
+p {
+  text-align: justify;
+}
+.sidebar {
   box-shadow: var(--shadow-main);
 }
 </style>

@@ -20,7 +20,7 @@
           <h1 class="fs-3 fw-bold">Welcome to my services page information!</h1>
           <hr />
           <div id="illustration" class="my-5">
-            <img class="illustration__services-banner w-100 object-fit-contain mb-4" src="../assets/images/full-color.webp" alt="illustration-banner" />
+            <img class="illustration__services-banner w-100 object-fit-contain mb-4" src="../assets/images/fullpaint.webp" alt="illustration-banner" />
             <h3><i class="fa-solid fa-brush"></i> Illustration Services</h3>
             <div class="illustration__service-desc my-5">
               <h4 class="mt-2">🐾 What do I do?</h4>
@@ -135,11 +135,11 @@
               <div class="illustration__services-payment">
                 <h4>🐾 What's the payment method?</h4>
                 <p>At the moment, I only accept payment via:</p>
-                <div class="d-flex gap-3 my-3">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Logo_dana_blue.svg" alt="" width="200" />
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Gopay_logo.svg" alt="" width="200" />
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/6/68/BANK_BRI_logo.svg" alt="" width="200" />
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="" width="200" />
+                <div class="d-flex gap-3 my-3 flex-wrap">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Logo_dana_blue.svg" alt="logo dana" width="200" />
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Gopay_logo.svg" alt="logo gopay" width="200" />
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/6/68/BANK_BRI_logo.svg" alt="logo bri" width="200" />
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="logo paypal" width="200" />
                 </div>
                 <p>
                   Any further information can be discussed privately via my social media <a class="font-red" target="__blank" href="https://instagram.com/senimentari_?igshid=MzNlNGNkZWQ4Mg==">Instagram</a>,

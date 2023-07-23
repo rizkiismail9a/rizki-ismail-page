@@ -24,7 +24,7 @@ export default {
   height: 100%;
   width: 100%;
   top: 0;
-  transition: all 0.3s;
+  left: 0;
 }
 .popUp {
   top: 150px;

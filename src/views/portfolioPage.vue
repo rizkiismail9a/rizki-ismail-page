@@ -46,7 +46,11 @@
               </div>
             </router-link>
           </div>
-          <router-view v-show="isOpen" @close="isOpen = false" class="position-absolute" />
+          <router-view v-show="isOpen" @close="isOpen = false" class="position-absolute" v-slot="{ Component }">
+            <transition name="route" mode="out-in" appear>
+              <component :is="Component" />
+            </transition>
+          </router-view>
         </div>
         <div class="container mb-3" id="website">
           <div class="web__desc">
@@ -129,5 +133,17 @@ p {
 }
 .sidebar {
   box-shadow: var(--shadow-main);
+}
+.route-enter-from {
+  opacity: 0;
+  transform: translateY(100px);
+}
+.route-enter-active,
+.route-leave-active {
+  transition: all 0.3s;
+}
+.route-leave-to {
+  opacity: 0;
+  transform: translateY(100px);
 }
 </style>

@@ -1,6 +1,10 @@
 <template>
-  <router-view></router-view>
-  <footer-part></footer-part>
+  <div class="d-flex flex-column f">
+    <div class="flex-grow-1 flex-shrink-1 w-100">
+      <router-view></router-view>
+    </div>
+    <footer-part></footer-part>
+  </div>
 </template>
 
 <script>
@@ -12,3 +16,8 @@ export default {
   },
 };
 </script>
+<style>
+.f {
+  min-height: 100vh;
+}
+</style>

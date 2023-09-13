@@ -60,10 +60,10 @@
               merge, and so on. He is also now on the way in learning React Js and backend.
             </p>
           </div>
-          <div class="row web__img">
-            <a v-for="web in webs" :key="web.id" :href="web.domain" class="font-red col-md-6 p-2 border-0 mx-auto">
+          <div class="container row justify-content-between web__img">
+            <a v-for="web in webs" :key="web.id" :href="web.domain" class="font-red col-md-6 p-2 border-0">
               <div class="img__wrapper" style="width: 100%">
-                <img :src="path + web.fileName" alt="tokobukumentari landing page" class="w-100 object-fit-contain mb-3 rounded" />
+                <img :src="path + web.fileName" :alt="web.fileName.split('.')[0]" class="w-100 object-fit-contain mb-3 rounded" />
                 <h2>{{ web.title }}</h2>
                 <div class="tech-and-date d-flex justify-content-between mb-3">
                   <div class="tech__img">
@@ -84,7 +84,7 @@
           <div class="container row justify-content-between">
             <a v-for="cerpen in cerpenCerpen" :key="cerpen.id" :href="cerpen.link" class="font-red col-md-6 p-2 border-0">
               <div class="img__wrapper">
-                <img :src="cerpen.fileName" alt="tokobukumentari landing page" class="w-100 object-fit-contain mb-3 rounded" />
+                <img :src="cerpen.fileName" :alt="cerpen.fileName.split('.')[0]" class="w-100 object-fit-contain mb-3 rounded" />
                 <p>{{ cerpen.title }}</p>
                 <p style="color: black; text-align: justify">{{ cerpen.description }}</p>
               </div>

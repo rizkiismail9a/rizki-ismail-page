@@ -2,7 +2,7 @@
   <div class="container max-width position-sticky top-0">
     <nav class="navbar navbar-expand-lg m-3 rounded bg-white">
       <div class="container d-flex flex-md-row flex-column m-auto">
-        <a class="navbar-brand" href="/"><img src="../assets/images/logo.webp" alt="senimentari logo" style="width: 80px" /></a>
+        <router-link class="navbar-brand" to="/"><img src="../assets/images/logo.webp" alt="senimentari logo" style="width: 80px" /></router-link>
         <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button> -->

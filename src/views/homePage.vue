@@ -4,10 +4,10 @@
     <div class="row">
       <div class="col-md-4 text-center d-flex align-items-center flex-column justify-content-between p-0">
         <div>
-          <a class="home__button rounded-pill p-2 d-inline-block font-red btn btn-primary" ref="homeButtonRefs" href="/about-me"><i class="fa-solid fa-user"></i> About Me </a>
+          <router-link class="home__button rounded-pill p-2 d-inline-block font-red btn btn-primary" ref="homeButtonRefs" to="/about-me"><i class="fa-solid fa-user"></i> About Me </router-link>
         </div>
         <div>
-          <a class="home__button rounded-pill p-2 d-inline-block font-red btn btn-primary" ref="homeButtonRefs" href="/portfolio"><i class="fa-regular fa-image"></i> Portfolio </a>
+          <router-link class="home__button rounded-pill p-2 d-inline-block font-red btn btn-primary" ref="homeButtonRefs" to="/portfolio"><i class="fa-regular fa-image"></i> Portfolio </router-link>
         </div>
       </div>
       <div class="col-md-4 text-center">
@@ -15,10 +15,10 @@
       </div>
       <div class="col-md-4 text-center d-flex align-items-center flex-column justify-content-between p-0">
         <div>
-          <a class="home__button rounded-pill p-2 d-inline-block font-red btn btn-primary" ref="homeButtonRefs" href="/my-services"><i class="fa-solid fa-bell-concierge"></i> Services </a>
+          <router-link class="home__button rounded-pill p-2 d-inline-block font-red btn btn-primary" ref="homeButtonRefs" to="/my-services"><i class="fa-solid fa-bell-concierge"></i> Services </router-link>
         </div>
         <div>
-          <a class="home__button rounded-pill p-2 d-inline-block font-red btn btn-primary" ref="homeButtonRefs" href="/contact-me"><i class="fa-regular fa-envelope"></i> Contact Me </a>
+          <router-link class="home__button rounded-pill p-2 d-inline-block font-red btn btn-primary" ref="homeButtonRefs" to="/contact-me"><i class="fa-regular fa-envelope"></i> Contact Me </router-link>
         </div>
       </div>
     </div>

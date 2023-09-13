@@ -24,17 +24,22 @@
     </div>
   </div>
   <div class="identity text-center max-width container">
-    <h1 class="fs-3 m-0">Muhamad Rizki Ismail</h1>
+    <h1 class="fs-3 m-0 font-red fw-bold">Muhamad Rizki Ismail</h1>
     <small>a.k.a</small>
     <h2 class="fs-4">Yuri S. Ostrovsky</h2>
     <p>FrontEnd Developer | Illustrator | Writer</p>
   </div>
+  <div>
+    <slide-show />
+  </div>
 </template>
 <script>
 import NavBar from "../components/NavBar.vue";
+import slideShow from "@/components/slideShow.vue";
 export default {
   components: {
     NavBar,
+    slideShow,
   },
   name: "home-page",
 };

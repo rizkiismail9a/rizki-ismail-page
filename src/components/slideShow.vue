@@ -1,9 +1,9 @@
 <template>
   <div class="row max-width mx-auto my-5">
     <div class="title fs-1 col-md-6">
-      <h4 class="text-start font-red fw-bold">What They Say?</h4>
-      <h3>What customers say about their experience with me</h3>
-      <p>They say what they feel</p>
+      <h4 class="text-md-start text-center font-red fw-bold">What They Say?</h4>
+      <h3 class="text-md-start text-center">What customers say about their experience with me</h3>
+      <p class="text-md-start text-center">They say what they feel</p>
     </div>
     <div class="container col-md-6 d-flex justify-content-center align-items-center testimonials-wrapper">
       <div class="slider w-100">

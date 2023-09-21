@@ -27,7 +27,7 @@
     <h1 class="fs-3 m-0 font-red fw-bold">Muhamad Rizki Ismail</h1>
     <small>a.k.a</small>
     <h2 class="fs-4">Yuri S. Ostrovsky</h2>
-    <p>FrontEnd Developer | Illustrator | Writer</p>
+    <p>Web Developer | Illustrator | Writer</p>
   </div>
   <div>
     <slide-show />

@@ -56,7 +56,7 @@ export default {
         if (counter > 3) {
           counter = 1;
         }
-      }, 5000);
+      }, 4000);
     },
   },
   mounted() {

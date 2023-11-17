@@ -4,7 +4,7 @@
     <div class="contact__title container w-50 m-auto p-0">
       <h4>Get in touch via</h4>
       <div class="contact__link">
-        <a href="https://wa.me/6282317421414" target="__blank" class="btn btn-primary font-red fs-3 mb-4 d-block border text-center p-0 rounded"><i class="fa-brands fa-whatsapp m-0"></i></a>
+        <a href="https://wa.me/6281915124888" target="__blank" class="btn btn-primary font-red fs-3 mb-4 d-block border text-center p-0 rounded"><i class="fa-brands fa-whatsapp m-0"></i></a>
         <a href="mailto:muhamadrizkiismail9a@gmail.com" class="btn btn-primary font-red fs-3 mb-4 d-block border text-center p-0 rounded"><i class="fa-regular fa-envelope m-0"></i></a>
         <p class="text-center">or input here directly</p>
       </div>

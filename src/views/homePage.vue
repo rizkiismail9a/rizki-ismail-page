@@ -23,11 +23,12 @@
       </div>
     </div>
   </div>
-  <div class="identity text-center max-width container">
+  <div class="identity text-center max-width container d-flex flex-column align-items-center gap-3">
     <h1 class="fs-3 m-0 font-red fw-bold">Muhamad Rizki Ismail</h1>
-    <small>a.k.a</small>
-    <h2 class="fs-4">Yuri S. Ostrovsky</h2>
     <p>Web Developer | Illustrator | Writer</p>
+    <div class="d-flex gap-3">
+      <img v-for="(link, index) in technologies" :key="index" :src="link" alt="" width="30" />
+    </div>
   </div>
   <div>
     <slide-show />
@@ -42,6 +43,17 @@ export default {
     slideShow,
   },
   name: "home-page",
+  data() {
+    return {
+      technologies: [
+        "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
+        "https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg",
+        "https://nuxt.com/assets/design-kit/icon-green.svg",
+        "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+        "https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg",
+      ],
+    };
+  },
 };
 </script>
 <style scoped>

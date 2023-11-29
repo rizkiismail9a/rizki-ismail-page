@@ -5,13 +5,12 @@
       <div class="col-md-2">
         <div class="card border-0 text-center sidebar position-sticky d-none d-md-block" style="top: 120px">
           <div class="d-flex flex-column">
-            <a href="/">
+            <router-link to="/">
               <img src="../assets/images/logo.webp" class="sidebar__logo m-auto" alt="logo senimentari" width="110" />
-            </a>
+            </router-link>
             <div class="sidebar__menu d-flex flex-column my-5">
               <a href="#website" class="font-red my-3"><i class="fa-solid fa-globe"></i> Website </a>
               <a href="#illustration" class="font-red my-3"><i class="fa-solid fa-brush"></i> Illustration </a>
-              <a href="#cerpen" class="font-red my-3"><i class="fa-solid fa-book"></i> Cerpen </a>
             </div>
           </div>
         </div>
@@ -21,8 +20,8 @@
           <div class="web__desc">
             <h1 class="fs-4">Website</h1>
             <p>
-              Rizki is highly passionate about web development. He spent all of his days in a week coding and adventuring new coding skills. He is now on the way to learn more about frontend web developing at Timedoor Academy, where Vue Js
-              is the main framework that is learnt there. He is also on the way to learn on his own about SQL and Firebase.
+              Rizki is highly passionate about web development. He spent all of his days in a week coding and adventuring for new coding skills. He is now on his way to learn more about frontend web development at Timedoor Academy, where
+              VueJS is the main framework that is learned there. He is also on his way to learn on his own about NUXT JS.
             </p>
           </div>
           <div class="container row justify-content-between web__img">
@@ -49,7 +48,10 @@
         <div class="container position-relative" id="illustration">
           <div class="illustration__desc">
             <h1 class="fs-4">Visual Art</h1>
-            <p>Rizki is a visual artist who actively makes content on his page in semi realism style. Those arts below are his best, those he worked either personally or commission projects, from personal use until book illustration.</p>
+            <p>
+              Rizki is a visual artist who actively makes content on his page in a semi-realism style. Those arts below are his best, those on which he worked either personally or on commission projects, from personal use until book
+              illustration.
+            </p>
           </div>
           <div class="row illustration__img gx-2">
             <router-link
@@ -81,21 +83,6 @@
             </transition>
           </router-view>
         </div>
-        <div class="container" id="cerpen">
-          <div class="illustration__desc">
-            <h1 class="fs-4">Cerpen</h1>
-            <p>Rizki is a writer who loves to write short story (cerpen) in surrealism style, cultural, and/or historical genre.</p>
-          </div>
-          <div class="container row justify-content-between">
-            <a v-for="cerpen in cerpenCerpen" :key="cerpen.id" :href="cerpen.link" class="font-red col-md-6 p-2 border-0">
-              <div class="img__wrapper">
-                <img :src="cerpen.fileName" :alt="cerpen.fileName.split('.')[0]" class="w-100 object-fit-contain mb-3 rounded" />
-                <p>{{ cerpen.title }}</p>
-                <p style="color: black; text-align: justify">{{ cerpen.description }}</p>
-              </div>
-            </a>
-          </div>
-        </div>
       </div>
     </div>
   </div>
@@ -111,7 +98,6 @@ export default {
       path: "/images/",
       arts: [],
       webs: [],
-      cerpenCerpen: [],
       isOpen: false,
     };
   },
@@ -124,8 +110,6 @@ export default {
       .then((res) => {
         this.arts = res.data.illustration;
         this.webs = res.data.websites;
-        this.cerpenCerpen = res.data.cerpenCerpen;
-        console.log(res.data);
       })
       .catch((err) => console.log(err));
   },

@@ -9,11 +9,10 @@
         <div class="col-md-8">
           <h1 class="fs-3">Muhamad Rizki Ismail</h1>
           <p class="card__text my-1">
-            Muhamad Rizki Ismail or known as Yuri S. Ostrovsky (pen name) is a self-taught web developer, visual artist, and cerpen writer. He is now a content-creator, freelance visual artist, and call center agent at Kamar Sastra by
-            profession. <br />
-            He is also now a student at Timedoor Academy Frontend Development Program in order to gain his frontend skills. He learns more about Vue Js, Firebase, Responsive Web Design, and so on. Although he has no bachelor degree, yet, he
-            is a highly competent person with superior human resource abilities such as critical thinking, fast learning, good at public speaking, and good problem solving. Those are proven by his ability to learn basic Vue Js within less
-            than two weeks, and his self-marketing strategies has brought clients from around the world, such as the UK, USA, Australia, and Belgium.
+            Muhamad Rizki Ismail, also known as Yuri S. Ostrovsky (pen name), is a self-taught web developer, visual artist, and cerpen writer. He is now a content creator and a freelance visual artist by profession.<br />He is also now a
+            student at the Timedoor Academy Frontend Development Program in order to gain his frontend skills. He learns more about Vue Js, Firebase, responsive web design, and so on. Although he has no bachelor degree, he is a highly
+            competent person with important human resource abilities such as critical thinking, fast learning, being good at public speaking, and good problem solving. Those are proven by his ability to learn basic Vue Js within less than
+            two weeks, and his self-marketing strategies have brought clients from around the world, such as the UK, USA, Australia, and Belgium.
           </p>
           <p class="mt-5">
             <a class="font-red download-cv d-inline-block" ref="downloadCv" href="https://docs.google.com/document/d/1g58eWM0jJ0Z5M18E1KJG8zIPgA8n0FRZKcMR7aA9W8M/edit">

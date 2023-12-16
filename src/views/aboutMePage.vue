@@ -39,12 +39,12 @@
             together! Feel free to explore my portfolio to witness the fusion of technology and art. If you have a project in mind or just want to say hello, don't hesitate to
             <router-link class="font-red" to="/contact-me">get in touch</router-link>!
           </p>
-          <p class="mt-5">
+          <!-- <p class="mt-5">
             <a class="font-red download-cv d-inline-block" ref="downloadCv" href="https://docs.google.com/document/d/1g58eWM0jJ0Z5M18E1KJG8zIPgA8n0FRZKcMR7aA9W8M/edit">
               Download CV <i class="fa-solid fa-download"></i>
               <span class="slide-hover"></span>
             </a>
-          </p>
+          </p> -->
         </div>
       </div>
     </div>

@@ -11,7 +11,7 @@
         </div>
       </div>
       <div class="col-md-4 text-center">
-        <img class="home__img rounded-circle" src="../assets/images/me.webp" alt="Muhamad Rizki Ismail" style="width: 200px" />
+        <img class="home__img rounded-circle" src="/images/smile.jpg" alt="Muhamad Rizki Ismail" style="width: 200px" />
       </div>
       <div class="col-md-4 text-center d-flex align-items-center flex-column justify-content-between p-0">
         <div>
@@ -24,8 +24,8 @@
     </div>
   </div>
   <div class="identity text-center max-width container d-flex flex-column align-items-center gap-3">
-    <h1 class="fs-3 m-0 font-red fw-bold">Muhamad Rizki Ismail</h1>
-    <p>Web Developer | Illustrator | Writer</p>
+    <h1 class="fs-3 m-0 font-red fw-bold">Hi! I'm Rizki</h1>
+    <p class="fw-bold">Frontend Developer | Illustrator | Writer</p>
     <div class="d-flex gap-3">
       <img v-for="(link, index) in technologies" :key="index" :src="link" alt="" width="30" />
     </div>

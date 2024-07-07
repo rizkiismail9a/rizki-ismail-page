@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex flex-column">
+  <div class="d-flex flex-column f">
     <div class="flex-grow-1 flex-shrink-1 w-100">
       <router-view></router-view>
     </div>

@@ -7,27 +7,28 @@
         <a
           href="mailto:muhamadrizkiismail9a@gmail.com"
           class="btn btn-primary font-red fs-3 mb-4 d-block border text-center p-0 rounded"
-          ><i class="fa-regular fa-envelope m-0"></i
-        ></a>
-        <a
-          href="https://x.com/senimentari_"
-          class="btn btn-primary font-red fs-3 mb-4 d-block border text-center p-0 rounded"
-          ><i class="fa-brands fa-x-twitter m-0"></i>
+          target="_blank"
+        >
+          <i class="fa-regular fa-envelope m-0" />
         </a>
         <a
-          href="https://web.facebook.com/MentariElephant/"
+          href="https://wa.me/6285156060583"
           class="btn btn-primary font-red fs-3 mb-4 d-block border text-center p-0 rounded"
-          ><i class="fa-brands fa-facebook-f m-0"></i>
+          target="_blank"
+        >
+          <i class="fa-brands fa-whatsapp m-0" />
         </a>
         <a
           href="https://www.linkedin.com/in/muhamad-rizki-ismail-033a7a269"
           class="btn btn-primary font-red fs-3 mb-4 d-block border text-center p-0 rounded"
-          ><i class="fa-brands fa-linkedin"></i>
+          target="_blank"
+          ><i class="fa-brands fa-linkedin" />
         </a>
         <a
           href="https://instagram.com/senimentari_?igshid=MzNlNGNkZWQ4Mg=="
           class="btn btn-primary font-red fs-3 mb-4 d-block border text-center p-0 rounded"
-          ><i class="fa-brands fa-instagram"></i>
+          target="_blank"
+          ><i class="fa-brands fa-instagram" />
         </a>
       </div>
     </div>

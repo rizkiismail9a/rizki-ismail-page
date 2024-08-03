@@ -3,14 +3,26 @@
   <div class="container max-width m-auto my-5">
     <div class="row mx-2">
       <div class="col-md-2">
-        <div class="card border-0 text-center sidebar position-sticky d-none d-md-block" style="top: 120px">
+        <div
+          class="card border-0 text-center sidebar position-sticky d-none d-md-block"
+          style="top: 120px"
+        >
           <div class="d-flex flex-column">
             <router-link to="/">
-              <img src="../assets/images/logo.webp" class="sidebar__logo m-auto" alt="logo senimentari" width="110" />
+              <img
+                src="../assets/images/logo.webp"
+                class="sidebar__logo m-auto"
+                alt="logo senimentari"
+                width="110"
+              />
             </router-link>
             <div class="sidebar__menu d-flex flex-column my-5">
-              <a href="#website" class="font-red my-3"><i class="fa-solid fa-globe"></i> Website </a>
-              <a href="#illustration" class="font-red my-3"><i class="fa-solid fa-brush"></i> Illustration </a>
+              <a href="#website" class="font-red my-3"
+                ><i class="fa-solid fa-globe"></i> Website
+              </a>
+              <a href="#illustration" class="font-red my-3"
+                ><i class="fa-solid fa-brush"></i> Illustration
+              </a>
             </div>
           </div>
         </div>
@@ -20,19 +32,37 @@
           <div class="web__desc">
             <h1 class="fs-4">Website</h1>
             <p>
-              Rizki is highly passionate about web development. He spent all of his days in a week coding and adventuring for new coding skills. He is now on his way to learn more about frontend web development at Timedoor Academy, where
-              VueJS is the main framework that is learned there. He is also on his way to learn on his own about NUXT JS.
+              Rizki is highly passionate about web development. He spent all of
+              his days in a week coding and adventuring for new coding skills.
+              He is now on his way to learn more about frontend web development.
             </p>
           </div>
           <div class="container row justify-content-between web__img">
-            <div v-for="web in webs" :key="web.id" class="col-md-6 p-2 border-0">
+            <div
+              v-for="web in webs"
+              :key="web.id"
+              class="col-md-6 p-2 border-0"
+            >
               <a :href="web.domain" class="font-red">
                 <div class="img__wrapper" style="width: 100%">
-                  <img :src="path + web.fileName" :alt="web.fileName.split('.')[0]" class="w-100 object-fit-contain mb-3 rounded" />
+                  <img
+                    :src="path + web.fileName"
+                    :alt="web.fileName.split('.')[0]"
+                    class="w-100 object-fit-contain mb-3 rounded"
+                  />
                   <h2>{{ web.title }}</h2>
-                  <div class="tech-and-date d-flex justify-content-between mb-3">
+                  <div
+                    class="tech-and-date d-flex justify-content-between mb-3"
+                  >
                     <div class="tech__img">
-                      <img :src="tech.url" alt="tech" class="me-1" v-for="tech in web.technologies" :key="tech.url" style="width: 30px" />
+                      <img
+                        :src="tech.url"
+                        alt="tech"
+                        class="me-1"
+                        v-for="tech in web.technologies"
+                        :key="tech.url"
+                        style="width: 30px"
+                      />
                     </div>
                     <small>{{ web.dateMade }}</small>
                   </div>
@@ -40,7 +70,10 @@
                 </div>
               </a>
               <p v-for="(github, name, index) in web.github" :key="index">
-                <a class="font-red" :href="github">&rightarrow; See sourcecode ({{ name }}) </a> <br />
+                <a class="font-red" :href="github"
+                  >&rightarrow; See sourcecode ({{ name }})
+                </a>
+                <br />
               </p>
             </div>
           </div>
@@ -49,8 +82,10 @@
           <div class="illustration__desc">
             <h1 class="fs-4">Visual Art</h1>
             <p>
-              Rizki is a visual artist who actively makes content on his page in a semi-realism style. Those arts below are his best, those on which he worked either personally or on commission projects, from personal use until book
-              illustration.
+              Rizki is a visual artist who actively makes content on his page in
+              a semi-realism style. Those arts below are his best, those on
+              which he worked either personally or on commission projects, from
+              personal use until book illustration.
             </p>
           </div>
           <div class="row illustration__img gx-2">
@@ -72,12 +107,21 @@
               }"
             >
               <div class="img__wrapper">
-                <img :src="path + art.fileName" alt="yuri's art" class="w-100 object-fit-contain mb-3 rounded" />
+                <img
+                  :src="path + art.fileName"
+                  alt="yuri's art"
+                  class="w-100 object-fit-contain mb-3 rounded"
+                />
                 <p>{{ art.title }}</p>
               </div>
             </router-link>
           </div>
-          <router-view v-show="isOpen" @close="isOpen = false" class="position-absolute" v-slot="{ Component }">
+          <router-view
+            v-show="isOpen"
+            @close="isOpen = false"
+            class="position-absolute"
+            v-slot="{ Component }"
+          >
             <transition name="route" mode="out-in" appear>
               <component :is="Component" />
             </transition>

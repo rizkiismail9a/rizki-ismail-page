@@ -85,7 +85,7 @@ export default {
       technologies: [
         "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
         "https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg",
-        "https://nuxt.com/assets/design-kit/icon-green.svg",
+        "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
         "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
         "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
       ],

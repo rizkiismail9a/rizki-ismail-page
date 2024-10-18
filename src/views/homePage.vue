@@ -34,12 +34,11 @@
         class="col-md-4 text-center d-flex align-items-center flex-column justify-content-between p-0"
       >
         <div>
-          <router-link
+          <a
             class="home__button rounded-pill p-2 d-inline-block font-red btn btn-primary"
-            ref="homeButtonRefs"
-            to="/my-services"
-            ><i class="fa-solid fa-bell-concierge"></i> Services
-          </router-link>
+            href="https://senimentari-blog.vercel.app/"
+            ><i class="fa-solid fa-newspaper"></i> Blogs
+          </a>
         </div>
         <div>
           <router-link

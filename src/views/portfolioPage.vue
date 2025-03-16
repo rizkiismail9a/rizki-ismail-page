@@ -1,6 +1,6 @@
 <template>
   <nav-bar class="z-1" />
-  <div class="container max-width m-auto my-5">
+  <div id="main-content" class="container max-width m-auto my-5">
     <div class="row mx-2">
       <div class="col-md-2">
         <div
@@ -43,7 +43,7 @@
               :key="web.id"
               class="col-md-6 p-2 border-0"
             >
-              <a :href="web.domain" class="font-red">
+              <div @click="openPage(web.domain)" class="font-red">
                 <div class="img__wrapper" style="width: 100%">
                   <img
                     :src="path + web.fileName"
@@ -68,7 +68,7 @@
                   </div>
                   <p style="color: black">{{ web.description }}</p>
                 </div>
-              </a>
+              </div>
               <p v-for="(github, name, index) in web.github" :key="index">
                 <a class="font-red" :href="github"
                   >&rightarrow; See sourcecode ({{ name }})
@@ -130,11 +130,15 @@
       </div>
     </div>
   </div>
+
+  <MyAlert v-if="showAllert" @close-dialog="showAllert = false" />
 </template>
 
 <script>
+import MyAlert from "@/components/MyAlert.vue";
 import NavBar from "@/components/NavBar.vue";
 import axios from "axios";
+
 export default {
   name: "portfolio-page",
   data() {
@@ -143,10 +147,12 @@ export default {
       arts: [],
       webs: [],
       isOpen: false,
+      showAllert: false,
     };
   },
   components: {
     NavBar,
+    MyAlert,
   },
   mounted() {
     axios
@@ -156,6 +162,17 @@ export default {
         this.webs = res.data.websites;
       })
       .catch((err) => console.log(err));
+  },
+
+  methods: {
+    openPage(link) {
+      if (link.length) {
+        window.open(link, "_blank");
+        return;
+      }
+
+      this.showAllert = true;
+    },
   },
 };
 </script>
@@ -178,5 +195,9 @@ p {
 .route-leave-to {
   opacity: 0;
   transform: translateY(100px);
+}
+
+.main-content {
+  overflow: hidden;
 }
 </style>

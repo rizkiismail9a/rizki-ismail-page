@@ -11,13 +11,7 @@
         >
           <i class="fa-regular fa-envelope m-0" />
         </a>
-        <a
-          href="https://wa.me/6285156060583"
-          class="btn btn-primary font-red fs-3 mb-4 d-block border text-center p-0 rounded"
-          target="_blank"
-        >
-          <i class="fa-brands fa-whatsapp m-0" />
-        </a>
+
         <a
           href="https://www.linkedin.com/in/muhamad-rizki-ismail-033a7a269"
           class="btn btn-primary font-red fs-3 mb-4 d-block border text-center p-0 rounded"

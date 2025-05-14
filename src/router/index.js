@@ -35,7 +35,13 @@ const router = createRouter({
       name: "Services | Muhamad Rizki Ismail",
       component: () => import("../views/servicesPage"),
     },
-    { path: "/:pathMatch(.*)*", name: "not-found", component: () => import("../views/NotFound") },
+
+    // Jika path-path di atas tidak cocok, akan otomatis ke sini
+    {
+      path: "/:pathMatch(.*)*",
+      name: "not-found",
+      component: () => import("../views/NotFound"),
+    },
   ],
 });
 router.beforeEach((to) => {

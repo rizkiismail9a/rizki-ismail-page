@@ -1,8 +1,15 @@
 <template>
   <div class="container w-100 popUp-wrapper w-100">
     <div class="card border-0 popUp w-50 p-3 m-auto position-sticky">
-      <i class="fa-solid fa-x font-red close-mark mb-3" @click="$emit('close')"></i>
-      <img :src="path + $route.query.fileName" class="w-100 rounded mb-3" alt="yuri's art" />
+      <i
+        class="fa-solid fa-x font-red close-mark mb-3"
+        @click="$emit('close')"
+      ></i>
+      <img
+        :src="path + $route.query.fileName"
+        class="w-100 rounded mb-3"
+        alt="yuri's art"
+      />
       <h1 class="card-title fs-4">{{ $route.query.title }}</h1>
       <p>{{ $route.query.desc }}</p>
     </div>
@@ -25,6 +32,7 @@ export default {
   width: 100%;
   top: 0;
   left: 0;
+  backdrop-filter: blur(20px);
 }
 .popUp {
   top: 150px;

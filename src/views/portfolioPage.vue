@@ -11,19 +11,23 @@
             <router-link to="/">
               <img
                 src="../assets/images/logo.webp"
-                class="sidebar__logo m-auto"
+                class="sidebar__logo m-auto mb-5"
                 alt="logo senimentari"
                 width="110"
               />
             </router-link>
-            <div class="sidebar__menu d-flex flex-column my-5">
-              <a href="#website" class="font-red my-3"
-                ><i class="fa-solid fa-globe"></i> Website
-              </a>
-              <a href="#illustration" class="font-red my-3"
-                ><i class="fa-solid fa-brush"></i> Illustration
-              </a>
-            </div>
+            <ul class="sidebar__menu px-3" type="none">
+              <li class="text-start mb-4">
+                <a href="#website" class="font-red my-3">
+                  <i class="fa-solid fa-globe"></i> Website
+                </a>
+              </li>
+              <li class="text-start mb-4">
+                <a href="#illustration" class="font-red my-3">
+                  <i class="fa-solid fa-brush"></i> Illustration
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -37,6 +41,8 @@
               He is now on his way to learn more about frontend web development.
             </p>
           </div>
+
+          <!-- List web yang pernah dibuat -->
           <div class="container row justify-content-between web__img">
             <div
               v-for="web in webs"
@@ -64,20 +70,24 @@
                         style="width: 30px"
                       />
                     </div>
-                    <small>{{ web.dateMade }}</small>
+                    <small>
+                      <i>{{ web.dateMade }}</i>
+                    </small>
                   </div>
                   <p style="color: black">{{ web.description }}</p>
                 </div>
               </div>
               <p v-for="(github, name, index) in web.github" :key="index">
-                <a class="font-red" :href="github"
-                  >&rightarrow; See sourcecode ({{ name }})
+                <a class="font-red" :href="github">
+                  &rightarrow; See sourcecode ({{ name }})
                 </a>
                 <br />
               </p>
             </div>
           </div>
         </div>
+
+        <!-- List art yang pernah dibuat -->
         <div class="container position-relative" id="illustration">
           <div class="illustration__desc">
             <h1 class="fs-4">Visual Art</h1>

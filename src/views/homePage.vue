@@ -1,6 +1,7 @@
 <template>
   <nav-bar />
   <div class="container max-width py-5 banner">
+    <!-- Menu -->
     <div class="row">
       <div
         class="col-md-4 text-center d-flex align-items-center flex-column justify-content-between p-0"
@@ -51,11 +52,15 @@
       </div>
     </div>
   </div>
+
+  <!-- Identitas diri -->
   <div
     class="identity text-center max-width container d-flex flex-column align-items-center gap-3"
   >
     <h1 class="fs-3 m-0 font-red fw-bold">Hi! I'm Rizki</h1>
-    <p class="fw-bold">Frontend Developer | Illustrator | Writer</p>
+    <strong>Frontend Developer | Illustrator | Writer</strong>
+
+    <!-- Teknologi yang saya pakai -->
     <div class="d-flex gap-3">
       <img
         v-for="(link, index) in technologies"
@@ -84,7 +89,7 @@ export default {
       technologies: [
         "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
         "https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg",
-        "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+        "https://nuxt.com/assets/design-kit/icon-green.svg",
         "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
         "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
       ],

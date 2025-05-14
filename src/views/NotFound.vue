@@ -1,5 +1,6 @@
 <template>
   <nav-bar />
+  <!-- Ini laman untuk error handling -->
   <div class="container max-width m-auto text-center message__wrapper">
     <h1>The Route Is Broken or Invalid</h1>
   </div>
